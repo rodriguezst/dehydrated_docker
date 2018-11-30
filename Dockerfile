@@ -11,4 +11,6 @@ WORKDIR dehydrated
 
 RUN git clone https://github.com/lukas2511/dehydrated.git .
 
+COPY . .
+
 ENTRYPOINT ["bash", "dehydrated"]
